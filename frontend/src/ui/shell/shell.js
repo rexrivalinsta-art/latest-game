@@ -1,5 +1,5 @@
 /**
- * NEURAL STRIKE — main menu shell.
+ * VANGUARD — main menu shell.
  *
  * A polished, animated front-end that opens over the live scene. It does not
  * replace the working game surfaces (the lobby, HUD, pause menu, scoreboard and
@@ -129,6 +129,11 @@ body.ns-shell-open .ow-net-overlay { visibility: hidden !important; }
   font-family:var(--ns-disp); font-weight:700; font-size:clamp(30px,3.2vw,46px);
   letter-spacing:.14em; line-height:.95; text-transform:uppercase;
   color:#fff; position:relative; white-space:nowrap;
+}
+.ns-mark-img{
+  display:block; width:clamp(190px,17vw,260px); height:auto;
+  filter:drop-shadow(0 4px 22px rgba(255,90,20,.35));
+  user-select:none; -webkit-user-drag:none;
 }
 .ns-mark .t{ color:var(--ns); position:relative; text-shadow:0 0 22px rgba(var(--ns-rgb)/.6); }
 .ns-tag{ font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:rgba(233,237,242,.55); font-family:var(--ns-disp); }
@@ -625,7 +630,10 @@ export class ShellMenu {
 }
 
 function wordmark() {
-  const gn = String(BRAND.GAME_NAME || 'NEURAL STRIKE').toUpperCase();
+  const gn = String(BRAND.GAME_NAME || 'VANGUARD').toUpperCase();
+  if (BRAND.LOGO) {
+    return `<img class="ns-mark-img" src="${esc(BRAND.LOGO)}" alt="${esc(gn)}" draggable="false" />`;
+  }
   return gn.slice(0, -1) + `<span class="t">${esc(gn.slice(-1))}</span>`;
 }
 

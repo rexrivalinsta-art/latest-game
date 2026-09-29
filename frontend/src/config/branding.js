@@ -1,15 +1,15 @@
 /**
- * NEURAL STRIKE — single source of truth for all user-facing branding.
+ * VANGUARD — single source of truth for all user-facing branding.
  *
  * Change the game name, tagline, colours and community links HERE and they
  * update everywhere. Nothing user-facing should hard-code these strings.
  */
 
 export const BRAND = {
-  GAME_NAME: 'NEURAL STRIKE',
-  GAME_SHORT: 'NS',
+  GAME_NAME: 'VANGUARD',
+  GAME_SHORT: 'VG',
   GAME_TAGLINE: 'Enter the grid. Own the fight.',
-  LOGO: '/logo.svg', // served from public/
+  LOGO: '/vanguard-wordmark.png', // served from public/
   VERSION: '1.0.0',
 
   // Brand colours (also mirrored in CSS variables in src/ui/theme.css).
@@ -24,8 +24,8 @@ export const BRAND = {
   UPDATES: 'https://example.com/updates',
 
   // Studio / legal.
-  STUDIO: 'NEURAL STRIKE',
-  COPYRIGHT: '© 2026 NEURAL STRIKE. All rights reserved.',
+  STUDIO: 'VANGUARD',
+  COPYRIGHT: '© 2026 VANGUARD. All rights reserved.',
 };
 
 export default BRAND;

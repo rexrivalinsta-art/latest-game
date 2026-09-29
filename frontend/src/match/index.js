@@ -677,7 +677,7 @@ export class MatchSystem {
     this.ui.setCeremonyReturn(CEREMONY_MS / 1000);
     this._sfx('matchstart', 0.9);
     this.ctx.events.emit('match:end', { reason: 'complete' });
-    // NEURAL STRIKE: authoritative per-match result for the local Profile stats.
+    // VANGUARD: authoritative per-match result for the local Profile stats.
     try {
       const meRow = (view.rows || []).find((r) => r.me) || null;
       this.ctx.events.emit('stats:result', {

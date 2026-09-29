@@ -1,4 +1,4 @@
-"""NEURAL STRIKE backend tests: REST + WebSocket relay over WSS ingress."""
+"""VANGUARD backend tests: REST + WebSocket relay over WSS ingress."""
 import asyncio
 import json
 import os
@@ -6,7 +6,7 @@ import pytest
 import requests
 import websockets
 
-BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', 'https://tactical-strike-136.preview.emergentagent.com').rstrip('/')
+BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', 'https://rexriva-play.preview.emergentagent.com').rstrip('/')
 WS_URL = BASE_URL.replace('https://', 'wss://').replace('http://', 'ws://') + '/api/ws'
 
 

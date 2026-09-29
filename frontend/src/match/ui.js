@@ -1,6 +1,6 @@
 /**
  * ===========================================================================
- * The lobby — the screen NEURAL STRIKE opens on
+ * The lobby — the screen VANGUARD opens on
  * ===========================================================================
  *
  * Styled from `DESIGN.md` (v0.3 — Console Black) through the tokens in
@@ -750,7 +750,7 @@ export class MatchStartUI {
     this.stripNet = q('[data-strip-net]');
     this.stripPrimary = q('[data-strip-primary]');
 
-    // The lobby has exactly one visual treatment: the NEURAL STRIKE brand
+    // The lobby has exactly one visual treatment: the VANGUARD brand
     // system. A browser still carrying a preference from a retired theme lab or
     // layout exploration has it cleared, not honoured.
     try {

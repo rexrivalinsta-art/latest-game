@@ -197,7 +197,7 @@ if (lockstep) {
 
 window.__ENGINE__ = engine;
 
-// NEURAL STRIKE front-end shell (the AAA main menu) over the live scene. It
+// VANGUARD front-end shell (the AAA main menu) over the live scene. It
 // routes into the preserved game surfaces (lobby, HUD, pause, ceremony) and
 // never replaces them. Off for capture/deterministic runs.
 if (!capture) {

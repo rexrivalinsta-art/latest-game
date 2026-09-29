@@ -87,7 +87,7 @@ export async function bootUiOnly() {
   requestAnimationFrame(() => ui.focusPrimary());
 
   window.__UIONLY__ = ui;
-  // NEURAL STRIKE shell over the lobby — the same front gate the engine boot
+  // VANGUARD shell over the lobby — the same front gate the engine boot
   // shows, mounted here (no engine) so the menu is inspectable under
   // ?renderGame=false. openSettings/getNet are inert without an engine.
   try {

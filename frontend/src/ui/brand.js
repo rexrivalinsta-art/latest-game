@@ -1,6 +1,6 @@
 /**
  * ===========================================================================
- * NEURAL STRIKE brand tokens — the one source of truth for every menu surface
+ * VANGUARD brand tokens — the one source of truth for every menu surface
  * ===========================================================================
  *
  * Implements `DESIGN.md` (v0.3 — Console Black). Three surfaces consume this
@@ -40,7 +40,7 @@ export const BRAND = {
   bg: '#000000', // Void — the canvas is true black
   surface: '#0a0c11', // Console — panels, a few points above the void
   fg: '#ededed', // Ice White — 18.1:1 on the void
-  accent: NS_BRAND.PRIMARY_BRAND, // NEURAL STRIKE brand — selection, live status, primary border
+  accent: NS_BRAND.PRIMARY_BRAND, // VANGUARD brand — selection, live status, primary border
   muted: '#62666e', // Steel — large text and icons only
   border: '#23262e', // Hairline — Ice White @14% resolved over the void
   ok: '#49c873', // Success
@@ -92,7 +92,7 @@ const CSS = `
   /* Channel forms of the colours that ever appear at partial alpha. A surface
      scrim over the live scene needs the palette AND an opacity, and rgba()
      cannot take a hex custom property — so the channels are the token and
-     rgb(var(--x) / a) is how every translucent NEURAL STRIKE surface is built. */
+     rgb(var(--x) / a) is how every translucent VANGUARD surface is built. */
   --wm-bg-rgb: 0 0 0;
   --wm-surface-rgb: 10 12 17;
   --wm-void-rgb: 5 6 10;
@@ -214,5 +214,5 @@ export function installBrandFont() {
  * The wordmark as markup: `WORKMEL` + a wrapped `T` that carries the drip.
  * Static string, no interpolation — safe to assign through innerHTML.
  */
-const _gn = String(NS_BRAND.GAME_NAME || 'NEURAL STRIKE').toUpperCase();
+const _gn = String(NS_BRAND.GAME_NAME || 'VANGUARD').toUpperCase();
 export const WORDMARK_HTML = _gn.slice(0, -1) + `<span class="t">${_gn.slice(-1)}</span>`;

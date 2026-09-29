@@ -29,7 +29,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger("neural-strike")
+logger = logging.getLogger("vanguard")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -48,7 +48,7 @@ class StatusCheckCreate(BaseModel):
 
 @api_router.get("/")
 async def root():
-    return {"message": "NEURAL STRIKE relay online"}
+    return {"message": "VANGUARD relay online"}
 
 
 @api_router.get("/healthz")
@@ -541,7 +541,7 @@ async def reaper_loop():
 async def _startup():
     asyncio.create_task(tick_loop())
     asyncio.create_task(reaper_loop())
-    logger.info(f"NEURAL STRIKE relay online (tick {TICK_HZ}Hz, max {MAX_ROOM}/room)")
+    logger.info(f"VANGUARD relay online (tick {TICK_HZ}Hz, max {MAX_ROOM}/room)")
 
 
 app.include_router(api_router)

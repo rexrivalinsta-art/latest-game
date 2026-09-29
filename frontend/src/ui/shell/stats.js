@@ -1,5 +1,5 @@
 /**
- * NEURAL STRIKE — local career stats.
+ * VANGUARD — local career stats.
  *
  * Persists to localStorage now; structured so a cloud account can replace the
  * store later (swap load/save for a fetch without touching the callers). Fed by
