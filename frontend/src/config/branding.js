@@ -13,14 +13,14 @@ export const BRAND = {
   VERSION: '1.0.0',
 
   // Brand colours (also mirrored in CSS variables in src/ui/theme.css).
-  PRIMARY_BRAND: '#00E5FF', // neon cyan
-  ACCENT_BRAND: '#FF2D6E', // hot magenta
+  PRIMARY_BRAND: '#FF6A1A', // vanguard orange
+  ACCENT_BRAND: '#FFB020', // warm amber
   BG_VOID: '#05070D',
 
   // Community / links — swap placeholders for real URLs.
   WEBSITE: 'https://example.com',
   DISCORD: 'https://discord.gg/your-invite',
-  TWITTER: 'https://x.com/your-handle',
+  TWITTER: 'https://x.com/vanguardfps',
   UPDATES: 'https://example.com/updates',
 
   // Studio / legal.

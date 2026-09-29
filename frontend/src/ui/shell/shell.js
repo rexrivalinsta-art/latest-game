@@ -137,6 +137,19 @@ body.ns-shell-open .ow-net-overlay { visibility: hidden !important; }
 }
 .ns-mark .t{ color:var(--ns); position:relative; text-shadow:0 0 22px rgba(var(--ns-rgb)/.6); }
 .ns-tag{ font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:rgba(233,237,242,.55); font-family:var(--ns-disp); }
+.ns-x{
+  display:inline-flex; align-items:center; gap:8px; align-self:flex-start; margin-top:4px;
+  padding:7px 12px; border-radius:999px; text-decoration:none; cursor:pointer;
+  color:rgba(233,237,242,.82); font-family:var(--ns-disp); font-size:12px; font-weight:600;
+  letter-spacing:.12em; text-transform:uppercase;
+  border:1px solid rgba(var(--ns-rgb)/.28); background:rgba(var(--ns-rgb)/.06);
+  transition:color .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.ns-x svg{ width:14px; height:14px; display:block; }
+.ns-x:hover{
+  color:#fff; border-color:rgba(var(--ns-rgb)/.6); background:rgba(var(--ns-rgb)/.14);
+  box-shadow:0 0 18px rgba(var(--ns-rgb)/.35);
+}
 
 .ns-nav{ display:flex; flex-direction:column; gap:2px; margin-top:6px; }
 .ns-nav button{
@@ -291,6 +304,10 @@ export class ShellMenu {
         <div class="ns-logo">
           <div class="ns-mark">${wordmark()}</div>
           <div class="ns-tag">${esc(BRAND.GAME_TAGLINE)}</div>
+          <a class="ns-x" href="${esc(BRAND.TWITTER)}" target="_blank" rel="noopener noreferrer" data-testid="header-x-link" aria-label="Follow VANGUARD on X" title="Follow VANGUARD on X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span>Follow @vanguardfps</span>
+          </a>
         </div>
         <nav class="ns-nav">
           ${NAV.map((n, i) => `<button data-nav="${n.id}" data-testid="nav-${n.id}" style="animation-delay:${0.1 + i * 0.05}s">${esc(n.label)}</button>`).join('')}
